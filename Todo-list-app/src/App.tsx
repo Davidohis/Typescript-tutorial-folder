@@ -8,8 +8,6 @@ const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
   const [todoList, setTodoList] = useState<Todo[]>([]);
 
-  console.log(todo, todoList);
-
   const handleAdd = (e: React.FormEvent<EventTarget>) => {
     e.preventDefault();
     if (todo) {
